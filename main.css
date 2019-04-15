@@ -1,5 +1,76 @@
-.jumbotron
+*
 {
-    margin-top: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar
+{
+    font-family: 'Montserrat';
+    text-shadow: 2px 2px 4px black;
+    background-color: rgba(240, 234, 214, 0.2)
+}
+.navbar-toggler
+{
+    color: black;
+}
+.fixed-top
+{
+    transition: background-color 200ms linear;
+}
+.fixed-top.scrolled
+{
+    background-color: #000 !important;
+    transition: background-color 200ms linear;
+}
+header
+{
+    color: white;
+    text-shadow: 2px 2px 4px black;
     text-align: center;
+    height: 100vh;
+    background-image: url(pics/header_background.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    font-family: 'Satisfy', cursive;
+    /* flex-box thing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+header h1:not(.citation), h3
+{
+    font-family: 'Montserrat';
+}
+#down
+{
+    position: absolute;
+    top:85vh;
+    padding: 10px 20px 0px 20px;
+    font-size: 2.5em;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#down:hover
+{
+    cursor: pointer;
+    background-color: #eee;
+    opacity: 0.8;
+}
+section
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+}
+section .row
+{
+    margin-top: 30px;
+    text-align: center;
+    vertical-align: middle;
 }
